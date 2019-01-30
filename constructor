@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Class1{
+      public:
+      Class1(string value){
+          setName(value);
+      }
+      void setName(string value){
+          name=value;
+      }
+      string getName(){
+          return name;
+      }
+      private:
+      string name;
+};
+int main(){
+      Class1 object("William Eden\n");
+      cout<<object.getName();
+      Class1 object2("Frank Eden");
+      cout<<object2.getName();
+      return 0;
+}
