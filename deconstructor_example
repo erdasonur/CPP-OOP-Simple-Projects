@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+class Class1{
+      public:
+        Class1();
+       ~Class1();
+};
+         
+Class1::Class1(){
+      cout<<"Constructor works beginning of class"<<endl;
+}
+Class1::~Class1(){
+      cout<<"Deconstructor works end of class"<<endl;
+}
+
+int main(){
+        cout<<"Typing something-1"<<endl;
+        Class1 object;
+        cout<<"Typing something-2"<<endl;
+}
