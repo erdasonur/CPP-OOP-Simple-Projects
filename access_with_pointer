@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+class Class1{
+    public:
+      void function1(){
+          cout<<"Trying to access without pointer";
+      }
+      void function2(){
+          cout<<"Trying to access with pointer";
+      }
+};
+
+int main(){
+    Class1 object;
+    object.function1();//Access without pointer as usual way
+    Class1 *pointer=&object;//the physical address is given to the pointer
+    pointer->function2();
+}
