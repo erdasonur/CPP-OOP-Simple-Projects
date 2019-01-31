@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+class Class1{
+    public:
+       void function1();
+       void function2() const;
+};
+void Class1::function1(){
+    cout<<"This is a function"<<endl;
+}
+void Class1::function2() const{
+    cout<<"This is a constant function"<<endl;
+}
+
+int main(){
+    Class1 object;
+    object.function1();
+    Class1 const constobj;
+    constobj.function2();
+}
